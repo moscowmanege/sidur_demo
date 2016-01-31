@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+.column {
+  height: 100%;
+}
+.column.left {
+  width: 93px;
+  position: fixed;
+  z-index: 9999;
+}
+.column.left .logo {
+  position: absolute;
+}
+.column.left .adress {
+  bottom: 0;
+  position: absolute;
+}
+.column.right {
+  width: 860px;
+  left: 93px;
+  position: absolute;
+  z-index: 0;
+}
+.column.right .item {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+}
+.column.right .item .poster {
+  display: block;
+  margin-left: 7px;
+}
+.column.right .footer {
+  position: relative;
+}
+.column.right .footer img {
+  position: absolute;
+  bottom: 60px;
+  z-index: 99999999;
+  left: -98px;
+  width: 108px;
+}
