@@ -1,16 +1,13 @@
-// ::-webkit-scrollbar { width: 0 !important }
-
 body
 	margin 0
 	padding 0
 
-html, body, .column
+html, body, .content_block, .column, .column_inner
 	height 100%
 
 .column
 	&.left
 		width 93px
-		// background-color green
 		position fixed
 		z-index 9999
 		.logo
@@ -24,16 +21,18 @@ html, body, .column
 			width 100px
 	&.right
 		right 0
-		// background-color grey
 		left 93px
 		position absolute
 		z-index 0
-		overflow scroll
-		.item
-			width 100%
-			min-height 400px
-			// background-color red
-			position relative
-			.poster
-				display block
-				margin-left 7px
+		overflow hidden
+		.column_inner
+			overflow scroll
+			margin-right -15px
+			.item
+				padding-top 5px
+				width 100%
+				min-height 400px
+				position relative
+				.poster
+					display block
+					margin-left 7px

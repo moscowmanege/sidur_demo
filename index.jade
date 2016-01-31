@@ -1,23 +1,25 @@
 doctype html
 html
 	head
-		title [MANEGE | SIDUR]
+		title [MANEGE | SIDUR MUSEUM]
 		meta(charset="utf-8")
 		link(rel='stylesheet', type='text/css', href='styl/main.css')
 		script(type='text/javascript', src='js/jquery-2.1.4.min.js')
 		script(type='text/javascript', src='js/main.js')
 	body
 		.column.left
-			img.logo(src='img/s-web-1.svg')
-			img.adress(src='img/s-web-3.svg')
-			img.logos(src='img/s-web-6.svg')
-		.column.right.infinity
-			each item in new Array(3)
-				.item
-					img(src='img/s-web-2.svg')
-					img(src='img/s-web-4.svg')
-					img.poster(src='img/s1.jpg')
-				.item
-					img(src='img/s-web-2.svg')
-					img(src='img/s-web-5.svg')
-					img.poster(src='img/s2.jpg')
+			.column_inner
+				img.logo(src='img/s-web-1.svg')
+				img.adress(src='img/s-web-3.svg')
+				img.logos(src='img/s-web-6.svg')
+		.column.right
+			.column_inner.infinity
+				each item in new Array(4)
+					.item
+						img(src='img/s-web-2.svg')
+						img(src='img/s-web-4.svg')
+						img.poster(src='img/s1.jpg')
+					.item
+						img(src='img/s-web-2.svg')
+						img(src='img/s-web-5.svg')
+						img.poster(src='img/s2.jpg')
