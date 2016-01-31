@@ -1,2 +1,2 @@
-### [ MOSCOW | SIDUR MUSEUM ]
+### [ MANEGE | SIDUR MUSEUM ]
  D E M O
