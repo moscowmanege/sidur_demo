@@ -19,11 +19,17 @@ body,
   bottom: 0;
   position: absolute;
 }
+.column.left .logos {
+  position: absolute;
+  top: 363px;
+  width: 100px;
+}
 .column.right {
-  width: 860px;
+  right: 0;
   left: 93px;
   position: absolute;
   z-index: 0;
+  overflow: scroll;
 }
 .column.right .item {
   width: 100%;
@@ -33,14 +39,4 @@ body,
 .column.right .item .poster {
   display: block;
   margin-left: 7px;
-}
-.column.right .footer {
-  position: relative;
-}
-.column.right .footer img {
-  position: absolute;
-  bottom: 60px;
-  z-index: 99999999;
-  left: -98px;
-  width: 108px;
 }

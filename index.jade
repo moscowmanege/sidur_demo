@@ -10,14 +10,14 @@ html
 		.column.left
 			img.logo(src='img/s-web-1.svg')
 			img.adress(src='img/s-web-3.svg')
-		.column.right
-			.item
-				img(src='img/s-web-2.svg')
-				img(src='img/s-web-4.svg')
-				img.poster(src='img/s1.jpg')
-			.item
-				img(src='img/s-web-2.svg')
-				img(src='img/s-web-5.svg')
-				img.poster(src='img/s2.jpg')
-			.footer
-				img(src='img/s-web-6.svg')
+			img.logos(src='img/s-web-6.svg')
+		.column.right.infinity
+			each item in new Array(3)
+				.item
+					img(src='img/s-web-2.svg')
+					img(src='img/s-web-4.svg')
+					img.poster(src='img/s1.jpg')
+				.item
+					img(src='img/s-web-2.svg')
+					img(src='img/s-web-5.svg')
+					img.poster(src='img/s2.jpg')
